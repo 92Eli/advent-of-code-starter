@@ -4,9 +4,9 @@ This repository provides starting code to get you set up for completing [Advent 
 ## Quick Start
 _For comprehensive instructions, see [Setting Up a Complete Project](#setting-up-a-complete-project)._
 1. Copy `template.js`.
-2. Modify `function process(input)` in the newly copied file.
+2. Modify `function process(input) { }` in the newly copied file.
 3. Save your puzzle input to a text file.
-3. Run your JavaScript file passing `-f` followed by the text file containing the puzzle input to load the data and run your code.
+3. Run your JavaScript file passing `-f` followed by the text file containing the puzzle input.
 
 ## Setting Up a Complete Project
 0. Fork this reposity to your computer
@@ -24,7 +24,8 @@ _For comprehensive instructions, see [Setting Up a Complete Project](#setting-up
   - For example, for 2022 day 01, run `node 2022/01 -f 2022/input/01.txt`.
   - Alternatively, hardcode the path to file in the `cliInput.load()` call for the file. For example, `cliInput.load("2022/input/01.txt")` for 2022 day 01.
   - The output is what you will submit on the Advent of Code page.
-Your final code structure will look like this:
+
+Your final project structure will look like this:
 ```
 project
 │   template.js
@@ -33,14 +34,14 @@ project
 └───2022
     │   01.js
     │   ... (other solution files)
-	│
+    │
     └───input
         │   01.txt
         │   ... (other input files)
 ```
 
 ## Command-line Options
-### Flags (modify inputParser.load()'s result)
+### Flags (modify `inputParser.load()`'s result)
 - `-f PATH/TO/FILE`: Parses `PATH/TO/FILE`'s contents and into `inputParser.load()`'s `.then()` callback.
 - `-t "SAMPLE INPUT"`: Passes the string `"SAMPLE INPUT"` into `inputParser.load()`'s `.then()` callback. Useful for debugging (you can use a smaller input to test functionality).
 - `-d`: Enable debug mode, which will output information about the data being processed
