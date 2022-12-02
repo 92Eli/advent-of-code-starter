@@ -5,6 +5,7 @@
 // todo: make a way to pull directly from website
 // (by full url or short one)
 // ex: https://adventofcode.com/2022/day/1/input
+// todo: make a way to directly submit input (pass -s to submit the output)
 
 const fs = require("fs/promises");
 
